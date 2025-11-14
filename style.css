@@ -1,0 +1,276 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background-color: #f4f4f4;
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: #004f71;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  left: 0.5rem;
+  top: 0.5rem;
+}
+
+.site-header {
+  background-color: #004f71;
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  width: 48px;
+  height: auto;
+}
+
+.city-name {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.dept-name {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.4rem;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+  background-color: #02608a;
+}
+
+.main-nav a[aria-current="page"] {
+  background-color: #ffffff;
+  color: #004f71;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.layout {
+  max-width: 1100px;
+  margin: 1.5rem auto;
+  display: flex;
+  gap: 1.5rem;
+  padding: 0 1rem 2rem;
+}
+
+.layout.single-column {
+  display: block;
+}
+
+.main-column {
+  flex: 2;
+  min-width: 0;
+}
+
+.sidebar {
+  flex: 1;
+  min-width: 0;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.card h1,
+.card h2,
+.card h3 {
+  margin-top: 0;
+}
+
+.tagline {
+  margin-top: 0.2rem;
+  font-size: 1rem;
+  color: #444;
+}
+
+.alerts {
+  border-left: 4px solid #c75b12;
+}
+
+.alerts ul {
+  padding-left: 1.25rem;
+}
+
+.contact .field {
+  margin-bottom: 1rem;
+}
+
+.contact label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+}
+
+.contact input,
+.contact select,
+.contact textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  border: 1px solid #ccc;
+  font: inherit;
+}
+
+.contact input:focus-visible,
+.contact select:focus-visible,
+.contact textarea:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 2px;
+  border-color: #004f71;
+}
+
+.contact button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.4rem;
+  border: none;
+  background-color: #004f71;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.contact button:hover,
+.contact button:focus-visible {
+  background-color: #02608a;
+}
+
+.sidebar .card ul {
+  padding-left: 1.25rem;
+}
+
+.sidebar .card li {
+  margin-bottom: 0.25rem;
+}
+
+.translate-button {
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.4rem;
+  border: none;
+  background-color: #004f71;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.translate-button:hover,
+.translate-button:focus-visible {
+  background-color: #02608a;
+  outline: 3px solid #ffbf47;
+  outline-offset: 2px;
+}
+
+.breadcrumb {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.breadcrumb ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.breadcrumb li::after {
+  content: "/";
+  margin-left: 0.4rem;
+  color: #666;
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #004f71;
+}
+
+.breadcrumb a:hover,
+.breadcrumb a:focus-visible {
+  text-decoration: underline;
+}
+
+.news-list,
+.newsletter-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.news-list li,
+.newsletter-list li {
+  margin-bottom: 1rem;
+}
+
+.news-meta {
+  margin: 0.1rem 0 0.4rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.site-footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+@media (max-width: 800px) {
+  .layout {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lafayette Communications Department – City of Lafayette</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <img src="logo.png" alt="City of Lafayette logo" class="logo">
+      <div>
+        <p class="city-name">City of Lafayette, Colorado</p>
+        <p class="dept-name">Communications Department</p>
+      </div>
+    </div>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="news.html">News &amp; Newsletters</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <img src="banner.jpg" alt="" class="hero-img">
+  </div>
+
+  <main id="main" class="layout">
+    <div class="main-column">
+      <section aria-labelledby="intro-heading" class="card">
+        <h1 id="intro-heading">Communications Department</h1>
+        <p class="tagline">Informing, engaging, and supporting Lafayette residents.</p>
+
+        <h2>What we do</h2>
+        <p>The Communications team provides clear and timely updates to Lafayette residents.</p>
+        <ul>
+          <li>Share city news and announcements</li>
+          <li>Send emergency notifications</li>
+          <li>Support newsletters and social media</li>
+          <li>Coordinate messages across departments</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="roles-heading" class="card">
+        <h2 id="roles-heading">Roles and responsibilities</h2>
+        <p>Key responsibilities are grouped below for easier scanning.</p>
+        <ul>
+          <li>Media relations and press releases</li>
+          <li>Website and landing page maintenance</li>
+          <li>Branding and graphic support</li>
+          <li>Department communication assistance</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="alerts-heading" class="card alerts">
+        <h2 id="alerts-heading">Quick alerts</h2>
+        <ul>
+          <li><a href="#">Current city alerts</a></li>
+          <li><a href="#">Public meetings and events</a></li>
+          <li><a href="#">Emergency notifications</a></li>
+        </ul>
+      </section>
+
+      <section id="contact" aria-labelledby="contact-heading" class="card contact">
+        <h2 id="contact-heading">Contact the Communications team</h2>
+        <p>Use this form to contact the department.</p>
+
+        <form>
+          <div class="field">
+            <label for="name">Full name</label>
+            <input id="name" name="name" type="text" required>
+          </div>
+
+          <div class="field">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="email" required>
+          </div>
+
+          <div class="field">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic">
+              <option value="">Choose one</option>
+              <option value="newsletter">Newsletter question</option>
+              <option value="media">Media inquiry</option>
+              <option value="website">Website issue</option>
+              <option value="general">General question</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">Your message</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+          </div>
+
+          <button type="submit">Send message</button>
+        </form>
+      </section>
+    </div>
+
+    <aside class="sidebar" aria-label="Stay informed">
+      <section class="card">
+        <h2>Stay informed</h2>
+        <ul>
+          <li><a href="news.html">Connection Newsletter</a></li>
+          <li><a href="news.html#spanish">La Conexión</a></li>
+          <li><a href="#">Lafayette Listens</a></li>
+          <li><a href="#">Website accessibility</a></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Language and accessibility</h2>
+        <button type="button" class="translate-button">Open language options</button>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; City of Lafayette, Colorado – Communications Department</p>
+  </footer>
+</body>
+</html>
